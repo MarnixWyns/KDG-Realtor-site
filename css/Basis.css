@@ -1,0 +1,12 @@
+body{
+    background-color: #ecf0f1;
+}
+h1{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10vw;
+}
+#logo {
+    float: left;
+    margin-left: 40px;
+}
