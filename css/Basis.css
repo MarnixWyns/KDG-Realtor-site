@@ -1,12 +1,80 @@
 body{
     background-color: #ecf0f1;
 }
-h1{
+header h1{
+    float: left;
     color: black;
-    font-family: "Open Sans", sans-serif;
-    font-size: 10vw;
+    font-family: "Panton Black Caps", sans-serif;
+    font-size: 160%;
+
+}
+header div{
+    clear: both;
+}
+h2{
+    color: black;
+    font-family: "Open Sans",sans-serif;
+    font-size: 100%;
+}
+picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #logo {
     float: left;
+    align-content: left;
     margin-left: 40px;
+}
+.navigatie{
+    background-color: #2980b9;
+    overflow: hidden;
+    margin: 20px 10px 30px;
+}
+.navigatie a{
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+}
+.navigatie a:hover{
+    background-color: #FFFFFF;
+    color: #000;
+}
+#footer{
+    background-color: #2c3e50;
+    height: 200px;
+    padding: 30px;
+}
+footer h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+footer a{
+    color: #FFFFFF;
+    font-family: "Open Sans",sans-serif;
+}
+.navigatie-verticaal{
+    width: 300px;
+}
+.navigatie-verticaal{
+    display: block;
+    padding: 16px;
+    color: white;
+}
+.navigatie-verticaal a:hover{
+    color: aqua;
+}
+.kolom{
+    float: left;
+    width: 33%;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
