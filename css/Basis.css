@@ -1,5 +1,13 @@
+/* Index en general */
+
+
 body{
     background-color: #ecf0f1;
+    margin: auto;
+}
+.limited {
+    max-width: 960px;
+    margin: auto;
 }
 header h1{
     float: left;
@@ -10,6 +18,10 @@ header h1{
 }
 header div{
     clear: both;
+}
+p {
+    color: black;
+    font-family: "Open Sans", sans-serif;
 }
 h2{
     color: black;
@@ -24,12 +36,11 @@ picture{
 #logo {
     float: left;
     align-content: left;
-    margin-left: 40px;
+    margin: 30px 30px 30px 0;
 }
 .navigatie{
     background-color: #2980b9;
     overflow: hidden;
-    margin: 20px 10px 30px;
 }
 .navigatie a{
     float: left;
@@ -40,37 +51,27 @@ picture{
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
 }
+#navFirst{
+    padding-left: 0;
+}
 .navigatie a:hover{
     background-color: #FFFFFF;
     color: #000;
 }
-/* Verkoop en Verhuur kolommen */
-.vKolom{
-    float: left;
-    width: 25%;
+.navigatie a:active{
+    background-color: #FFFFFF;
+    color: #000;
 }
-.rij:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-/* Responsive kaders stijlen*/
-@media (max-width: 960px) {
-    .vKolom{
-        width: 50%;
-    }
-}
-
-@media (max-width: 600px) {
-    .vKolom{
-        width: 100%;
-    }
-}
-
-#footer{
+footer{
     background-color: #2c3e50;
     height: 200px;
     padding: 30px;
+}
+.footer {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 footer h2{
     font-family: "Open Sans", sans-serif;
@@ -105,4 +106,85 @@ footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+/* Contact pagina */
+#gevelFoto {
+    float: left;
+}
+#contactInfo{
+    float: left;
+}
+.endFloat{
+    clear: both;
+}
+form{
+    color: black;
+    font-family: "Open Sans", sans-serif;
+}
+.contactI{
+    font-family: "Open Sans", sans-serif;
+    font-size: 90%;
+}
+.oUren p{
+    line-height: 40%;
+}
+.cRB{
+    margin-left: 16px;
+}
+button {
+    border: none;
+    color: white;
+    padding: 16px 28px;
+    background-color: #2980b9;
+}
+button:hover{
+    color: black;
+    background-color: #FFFFFF;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 28px;
+    background-color: #2980b9;
+}
+.button:hover{
+    color: black;
+    background-color: #FFFFFF;
+}
+/* Verkoop verhuur */
+
+/* Verkoop en Verhuur kolommen */
+.vKolom{
+    float: left;
+    width: 25%;
+}
+.rij:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vBlock {
+    background-color: #FAFAFA;
+    margin: 15px;
+}
+.vBlock img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+/* Responsive kaders stijlen*/
+@media (max-width: 960px) {
+    .vKolom{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .vKolom{
+        width: 100%;
+    }
 }
