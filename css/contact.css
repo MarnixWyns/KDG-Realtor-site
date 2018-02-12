@@ -1,0 +1,30 @@
+/* Contact pagina */
+#gevelFoto {
+    float: left;
+}
+
+#contactInfo {
+    float: left;
+}
+
+.endFloat {
+    clear: both;
+}
+
+form {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contactI {
+    font-family: "Open Sans", sans-serif;
+    font-size: 90%;
+}
+
+.oUren p {
+    line-height: 40%;
+}
+
+.cRB {
+    margin-left: 16px;
+}
