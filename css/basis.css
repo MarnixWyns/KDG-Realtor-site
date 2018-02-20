@@ -54,12 +54,12 @@ picture {
     text-decoration: none;
 }
 
-.navigatie a:hover {
+.navigatie a:hover:not(.active) {
     background-color: #FFFFFF;
     color: #000;
 }
 
-.navigatie a:active, .active {
+.navigatie a:active {
     background-color: #FFFFFF;
     color: #000;
 }
@@ -141,18 +141,4 @@ button:hover {
 .button:hover {
     color: black;
     background-color: #FFFFFF;
-}
-
-
-/* Responsive kaders stijlen*/
-@media (max-width: 960px) {
-    .vKolom {
-        width: 50%;
-    }
-}
-
-@media (max-width: 600px) {
-    .vKolom {
-        width: 100%;
-    }
 }

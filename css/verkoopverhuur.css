@@ -23,7 +23,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
 
+.vBlock p{
+    margin: 8px;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 14px;
 }
 
 /* Verkoop verhuur */
@@ -54,4 +63,20 @@
 .vFilter button:hover {
     background-color: #ecf0f1;
     color: black;
+}
+img.vImg {
+    margin-top: 4px;
+}
+
+/* Responsive kaders stijlen*/
+@media (max-width: 960px) {
+    .vKolom {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .vKolom {
+        width: 100%;
+    }
 }
