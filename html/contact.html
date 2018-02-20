@@ -32,38 +32,46 @@
         <p>Is er toch nog iets dat we voor u kunnen doen? Nog enige onduidelijkheid over een bepaald pand? Voor meer
             informatie kunt u ons altijd contacteren via onderstaand formulier</p>
         <br>
-        <form action="contactComplete.html">
-            <label>
-                Voornaam: <br>
-                <input class="contactI" type="text" name="voornaam">
-            </label><br>
-            <label>
-                Achternaam <br>
-                <input class="contactI" type="text" name="achternaam">
-            </label><br>
-            <label>
-                Telefoon: <br>
-                <input class="contactI" type="text" name="telefoon">
-            </label><br>
-            <label>
-                Email adres: <br>
-                <input class="contactI" type="text" name="email">
-            </label><br>
-            <label for="berichtVeld">
-                Bericht: <br>
-            </label>
-            <textarea class="contactI" name="bericht" id="berichtVeld" cols="60" rows="10"></textarea> <br>
-            Hoe wenst u bereikt te worden?<br>
-            <label class="cRB">
-                <input type="radio" name="contact" value="telefoon" checked>
-                Telefonisch
-            </label><br>
-            <label class="cRB">
-                <input type="radio" name="contact" value="email">
-                Via email
-            </label> <br>
-            <input type="submit" value="Verzend" class="button">
-        </form>
+        <section class="rij">
+            <section class="kolom50">
+                <form action="contactComplete.html">
+                    <label>
+                        Voornaam: <br>
+                        <input class="contactI" type="text" name="voornaam">
+                    </label><br>
+                    <label>
+                        Achternaam <br>
+                        <input class="contactI" type="text" name="achternaam">
+                    </label><br>
+                    <label>
+                        Telefoon: <br>
+                        <input class="contactI" type="text" name="telefoon">
+                    </label><br>
+                    <label>
+                        Email adres: <br>
+                        <input class="contactI" type="text" name="email">
+                    </label><br>
+                    <label class="cRB">
+                        <input type="radio" name="contact" value="telefoon" checked>
+                        Telefonisch
+                    </label><br>
+                    <label class="cRB">
+                        <input type="radio" name="contact" value="email">
+                        Via email
+                    </label> <br>
+                    <input type="submit" value="Verzend" class="button">
+                </form>
+            </section>
+            <section class="kolom50">
+                <label for="berichtVeld">
+                    Bericht: <br>
+                </label>
+                <textarea class="contactI" name="bericht" id="berichtVeld" cols="60" rows="10"></textarea> <br>
+                Hoe wenst u bereikt te worden?<br>
+            </section>
+        </section>
+
+
     </section>
     <section>
         <h2>Hoe te bereiken?</h2>
@@ -90,13 +98,13 @@
 <footer>
     <aside class="footer">
         <nav class="rij">
-            <nav class="kolom">
+            <nav class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
                 <p>Pylyserlaan 112,</p>
                 <p>8670 Koksijde</p>
             </nav>
-            <nav class="kolom">
+            <nav class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
                     <ul>
@@ -107,7 +115,7 @@
                     </ul>
                 </nav>
             </nav>
-            <nav class="kolom">
+            <nav class="kolom33">
                 <h2>Openingsuren</h2>
                 <p>Maandag: gesloten</p>
                 <p>Dinsdag - Vrijdag: 9 - 16u</p>
