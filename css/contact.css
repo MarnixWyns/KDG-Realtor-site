@@ -28,3 +28,9 @@ form {
 .cRB {
     margin-left: 16px;
 }
+
+@media (max-width: 600px) {
+    .kolom50{
+        width: 100%;
+    }
+}

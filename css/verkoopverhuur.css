@@ -86,3 +86,9 @@ img.vImg {
         width: 100%;
     }
 }
+
+.rij4KolomGelijk:after{
+    content: "";
+    display: table;
+    clear: both;
+}
