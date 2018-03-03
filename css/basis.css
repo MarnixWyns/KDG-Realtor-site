@@ -39,12 +39,7 @@ picture {
     align-content: left;
     margin: 30px 30px 30px 0;
 }
-/* Fix responsive */
-@media (max-width: 600px) {
-    .navigatie{
-        display: block;
-    }
-}
+
 
 .navigatie {
     background-color: #2980b9;
@@ -190,6 +185,16 @@ form > input {
 
     }
 
+    nav > a {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    nav {
+        float: none;
+    }
+
     header > h1 {
         opacity: 0;
         text-indent: 100%;
@@ -197,7 +202,13 @@ form > input {
         white-space: nowrap;
     }
 
+    footer {
+        background-color: #2c3e50;
+        margin-top: 2rem;
+        height: 500px;
+        padding: 0 32px 32px;
 
+    }
 }
 
 @media (max-width: 450px) {
@@ -205,4 +216,5 @@ form > input {
         display: table;
         width: 100%;
     }
+
 }

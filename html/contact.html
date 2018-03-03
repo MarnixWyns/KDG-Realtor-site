@@ -35,76 +35,77 @@
         <section class="rij">
             <section class="kolom50">
                 <form action="contactComplete.html">
-                    <label>
-                        Voornaam: <br>
-                        <input class="contactI" type="text" name="voornaam">
-                    </label><br>
-                    <label>
-                        Achternaam <br>
-                        <input class="contactI" type="text" name="achternaam">
-                    </label><br>
-                    <label>
-                        Telefoon: <br>
-                        <input class="contactI" type="text" name="telefoon">
-                    </label><br>
-                    <label>
-                        Email adres: <br>
-                        <input class="contactI" type="text" name="email">
-                    </label><br>
-                    <br>
-                    Hoe wenst u bereikt te worden?<br>
-                    <label class="cRB">
-                        <input type="radio" name="contact" value="telefoon" checked>
-                        Telefonisch
-                    </label><br>
-                    <label class="cRB">
-                        <input type="radio" name="contact" value="email">
-                        Via email
-                    </label> <br>
-                    <input type="submit" value="Verzend" class="button">
+                    <section class="rij">
+                        <section class="kolom50">
+                            <label for="voornaam">Voornaam:</label><br>
+                            <input class="contactI" id="voornaam" type="text" name="voornaam" size="40" required><br>
+                            <label for="achternaam">Achternaam</label><br>
+                            <input class="contactI" id="achternaam" type="text" name="achternaam" size="40" required><br>
+                            <label for="telefoon">Telefoon:</label><br>
+                            <input class="contactI" id="telefoon" type="text" name="telefoon" size="40"
+                                   pattern="^0[1-9][0-9]{7,8}$" required><br>
+                            <label for="email">Email adres:</label><br>
+                            <input class="contactI" id="email" type="text" name="email" size="40"
+                                   pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
+                            <br>
+                            <br>
+                            Hoe wenst u bereikt te worden?<br>
+                            <input type="radio" id="rbtelefoon" name="contact" value="telefoon" checked>
+                            <label class="cRB" for="rbtelefoon">Telefonisch</label><br>
+                            <input type="radio" id="rbemail" name="contact" value="email">
+                            <label class="cRB" for="rbemail">Via email</label><br>
+                            <input type="submit" value="Verzend" class="button">
+                        </section>
+                        <section class="kolom50">
+                            <label for="berichtVeld">Bericht:</label>
+                            <textarea class="contactI" name="bericht" id="berichtVeld" cols="60" rows="10"></textarea>
+                        </section>
+                    </section>
                 </form>
-            </section>
-            <section class="kolom50">
-                <label for="berichtVeld">
-                    Bericht: <br>
-                </label>
-                <textarea class="contactI" name="bericht" id="berichtVeld" cols="60" rows="10"></textarea>
+
             </section>
         </section>
     </section>
 
     <section>
-        <h2>Hoe te bereiken?</h2>
-        <img id="gevelFoto" src="../images/fotogevel.png" alt="Foto van de voorkant van ons filiaal" width="500"
-             height="300">
-        <section id="contactInfo">
-            <p>U bent natuurlijk ook altijd welkom om eens binnen te springen voor een vrijblevend gesprek met onze
-                immo-experts.</p>
-            <strong>Pylyserlaan 112
-                8670 Koksijde
-            </strong>
-        </section>
-        <div class="endFloat"></div>
-        <section class="oUren">
-            <h2>Openingsuren</h2>
-            <p>Maandag: gesloten</p>
-            <p>Dinsdag - Vrijdag: 9 - 16u</p>
-            <p>Zaterdag: 8 - 18u</p>
-            <p>Zondag: Gesloten</p>
-        </section>
+        <section class="rij">
+            <section class="kolom50">
+                <h2>Hoe te bereiken?</h2>
+                <img id="gevelFoto" src="../images/fotogevel.png" alt="Foto van de voorkant van ons filiaal" width="500"
+                     height="300">
+            </section>
 
+            <section class="kolom50">
+                <section id="contactInfo">
+                    <p>U bent natuurlijk ook altijd welkom om eens binnen te springen voor een vrijblevend gesprek met
+                        onze
+                        immo-experts.</p>
+                    <strong>Pylyserlaan 112
+                        8670 Koksijde
+                    </strong>
+                </section>
+                <div class="endFloat"></div>
+                <section class="oUren">
+                    <h2>Openingsuren</h2>
+                    <p>Maandag: gesloten</p>
+                    <p>Dinsdag - Vrijdag: 9 - 16u</p>
+                    <p>Zaterdag: 8 - 18u</p>
+                    <p>Zondag: Gesloten</p>
+                </section>
+            </section>
+        </section>
     </section>
 </main>
 <footer>
     <aside class="footer">
-        <nav class="rij">
-            <nav class="kolom33">
+        <section class="rij">
+            <section class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
                 <p>Pylyserlaan 112,</p>
                 <p>8670 Koksijde</p>
-            </nav>
-            <nav class="kolom33">
+            </section>
+            <section class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
                     <ul>
@@ -114,15 +115,15 @@
                         <li><a href="../html/contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </nav>
-            <nav class="kolom33">
+            </section>
+            <section class="kolom33">
                 <h2>Openingsuren</h2>
                 <p>Maandag: gesloten</p>
                 <p>Dinsdag - Vrijdag: 9 - 16u</p>
                 <p>Zaterdag: 8 - 18u</p>
                 <p>Zondag: Gesloten</p>
-            </nav>
-        </nav>
+            </section>
+        </section>
     </aside>
 </footer>
 </body>

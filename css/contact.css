@@ -1,12 +1,4 @@
 /* Contact pagina */
-#gevelFoto {
-    float: left;
-}
-
-#contactInfo {
-    float: left;
-}
-
 .endFloat {
     content: "";
     display: table;
@@ -23,7 +15,9 @@ form {
     font-size: 90%;
 }
 
-
+.button {
+    margin: 20px;
+}
 
 .oUren p {
     line-height: 40%;
