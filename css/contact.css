@@ -8,6 +8,8 @@
 }
 
 .endFloat {
+    content: "";
+    display: table;
     clear: both;
 }
 
@@ -20,6 +22,8 @@ form {
     font-family: "Open Sans", sans-serif;
     font-size: 90%;
 }
+
+
 
 .oUren p {
     line-height: 40%;
