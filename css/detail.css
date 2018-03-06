@@ -2,8 +2,12 @@ h3 {
     font-weight: normal;
 }
 
+img {
+   margin: 2%;
+}
+
 #hoofdfoto {
-    width: 66.666%;
+    width: 62.666%;
     height: auto;
 }
 
@@ -18,5 +22,16 @@ h3 {
 @media (max-width: 960px) {
     .kolom33 {
         width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+    img {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 }

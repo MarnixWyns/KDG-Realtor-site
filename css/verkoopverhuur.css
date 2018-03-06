@@ -22,17 +22,9 @@
 
 .vBlock {
     background-color: #FAFAFA;
-    margin: 5px;
-}
-
-.vBlock img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.vBlock p{
-    margin: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
 h3 {
@@ -70,7 +62,7 @@ h3 {
     background-color: #ecf0f1;
     color: black;
 }
-img.vImg {
+img .vImg {
     margin-top: 4px;
 }
 
