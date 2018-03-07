@@ -5,6 +5,7 @@
     <title>Verkoop (Gefilterd)</title>
     <link rel="stylesheet" href="../css/basis.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/verkoopverhuur.css">
 </head>
 <body>
 <header class="limited">
@@ -23,6 +24,54 @@
     </section>
 </nav>
 
+<main>
+    <section class="vFilter limited">
+        <label for="sTypeV">Filters:</label>
+        <select name="sTypeV" id="sTypeV">
+            <option value="Herverkoop">Herverkoop</option>
+            <option value="Nieuw">Nieuw</option>
+        </select>
+        <label for="sFilterPrijs"></label>
+        <select name="prijsFilter" id="sFilterPrijs">
+            <option value="< 250.000">&lt; &euro;249</option>
+            <option value="250.000-500.000">&euro;250 - &euro;499</option>
+            <option value="500.000-750.000">&euro;500 - &euro;749</option>
+            <option value="750.000+">&gt; &euro;750</option>
+        </select>
+        <label for="sVerwarming"></label>
+        <select name="sVerwarming" id="sVerwarming">
+            <option value="Gas">Gas</option>
+            <option value="Mazout">Mazout</option>
+            <option value="Elektriciteit">Elektriciteit</option>
+        </select>
+
+        <a href="verhuurfiltered.html">
+            <button id="vFilterBtn">Zoek</button>
+        </a>
+    </section>
+
+    <article class="limited">
+        <section class="vBlock">
+            <a href="#">
+                <img class="vImg" src="../images/verkoop/fullsize/appartement21.jpg" alt="Foto van een villa"
+                     width="205"
+                     height="140">
+                <h2>Appartement</h2>
+                <p>&euro; 240.000</p>
+            </a>
+        </section>
+        <section class="vBlock">
+            <a href="#">
+                <img class="vImg" src="../images/verkoop/fullsize/appartement22.jpg" alt="Foto van een villa"
+                     width="205"
+                     height="140">
+                <h2>Appartement</h2>
+                <p>&euro; 245.000</p>
+            </a>
+        </section>
+    </article>
+</main>
+
 <footer>
     <aside class="footer">
         <nav class="rij">
@@ -36,7 +85,7 @@
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../%23">Home</a></li>
                         <li><a href="verhuur.html">Verhuur</a></li>
                         <li><a href="verkoop.html">Verkoop</a></li>
                         <li><a href="contact.html">Contact</a></li>
