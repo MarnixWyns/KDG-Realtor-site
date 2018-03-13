@@ -10,6 +10,32 @@ form {
     font-family: "Open Sans", sans-serif;
 }
 
+form {
+    box-sizing: border-box;
+    margin: 0 20px 4em;
+}
+
+#sbutton {
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    margin-top: 0.5em;
+    float: right;
+}
+
+label[for=berichtVeld]{
+    float: right;
+    margin: 4px 0;
+}
+
+textarea {
+    float: right;
+}
+
+#sbutton:hover{
+    border: solid grey;
+}
+
 .contactI {
     font-family: "Open Sans", sans-serif;
     font-size: 90%;

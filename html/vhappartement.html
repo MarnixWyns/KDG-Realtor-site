@@ -2,11 +2,11 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Appartement</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/verkoopverhuur.css">
     <link rel="stylesheet" href="../css/basis.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 <header class="limited">
@@ -21,21 +21,52 @@
         <a href="../index.html" id="navFirst">Home</a>
         <a href="verhuur.html">Verhuur</a>
         <a href="verkoop.html">Verkoop</a>
-        <a class="active" href="contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
     </section>
 </nav>
 
-<main class="limited">
-    <section>
-        <h2>Nog vragen?</h2>
-        <p>Is er toch nog iets dat we voor u kunnen doen? Nog enige onduidelijkheid over een bepaald pand? Voor meer
-            informatie kunt u ons altijd contacteren via onderstaand formulier</p>
-        <br>
+<main>
+    <article class="limited">
+        <h1>Appartement in het centrum van Koksijde</h1>
+
+        <section class="rij2KolomOngelijk">
+            <img id="hoofdfoto" src="../images/verhuur/fullsize/appartement4.jpg" alt="Een foto van twee garageboxen waarvan 1 open en 1 gesloten is" width="480" height="360">
+            <section class="kolom33 description">
+                <h2>&euro;400 / maand</h2>
+                <h3>Appartement (82m<sup>2</sup>)</h3>
+                <img class="mini" src="../images/verhuur/mini/keuken1.jpg"
+                     alt="Het interieur van het getoonde appartement" width="205" height="140">
+                <img class="mini" src="../images/verhuur/mini/living1.jpg"
+                     alt="Het interieur van het getoonde appartement" width="205" height="140">
+            </section>
+        </section>
+
+        <section class="rij3KolomGelijk">
+            <section class="kolom33">
+                <h3>Beschrijving</h3>
+                <p>Bemeubeld appartement op de 2de verdieping,
+                </p>
+            </section>
+            <section class="kolom33">
+                <h3>Specificaties</h3>
+                <ul>
+                    <li>1 slaapkamer</li>
+                    <li>1 badkamer</li>
+                    <li>1 toilet</li>
+                    <li>EPC: 335</li>
+                </ul>
+            </section>
+            <section class="kolom33">
+                <h3>Adres</h3>
+                <p>Spalaan 18, 8400 Koksijde</p>
+            </section>
+        </section>
+
         <section class="rij">
             <form action="contactComplete.html">
                 <fieldset>
                     <legend>Contacteer ons:</legend>
-                    <section class="kolom50">
+                    <section class="contactBlock">
                         <label for="voornaam">Voornaam:</label><br>
                         <input class="contactI" id="voornaam" type="text" name="voornaam" size="40" required><br>
                         <label for="achternaam">Achternaam</label><br>
@@ -55,7 +86,7 @@
                         <label class="cRB" for="rbemail">Via email</label><br>
                     </section>
 
-                    <section class="kolom50">
+                    <section class="contactBlock">
                         <label for="berichtVeld">Bericht:</label>
                         <textarea class="contactI" name="bericht" id="berichtVeld" cols="50" rows="10"></textarea>
                         <input type="submit" value="Verzend" class="button" id="sbutton">
@@ -64,71 +95,37 @@
 
             </form>
         </section>
-    </section>
-
-    <section>
-            <section class="vBlock">
-                <h2>Hoe te bereiken?</h2>
-                <img id="gevelFoto" src="../images/fotogevel.png" alt="Foto van de voorkant van ons filiaal" width="500"
-                     height="300">
-            </section>
-
-            <section class="vBlock">
-                <section id="contactInfo">
-                    <p>U bent natuurlijk ook altijd welkom om eens binnen te springen voor een vrijblevend gesprek met
-                        onze
-                        immo-experts.</p>
-                    <strong>Pylyserlaan 112
-                        8670 Koksijde
-                    </strong>
-                </section>
-                <section class="oUren">
-                    <h2>Openingsuren</h2>
-                    <p>Maandag: gesloten</p>
-                    <p>Dinsdag - Vrijdag: 9 - 16u</p>
-                    <p>Zaterdag: 8 - 18u</p>
-                    <p>Zondag: Gesloten</p>
-                </section>
-
-            </section>
-        <iframe
-                width="600"
-                height="450"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDddmE1I5ZE1mySoFibt-h-s0tyvV87Idc
-    &q=Pylyserlaan+112,Koksijde" allowfullscreen>
-        </iframe>
-
-    </section>
+    </article>
 </main>
+
 <footer>
     <aside class="footer">
-        <section class="rij">
-            <section class="kolom33">
+        <nav class="rij3KolomGelijk">
+            <nav class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
                 <p>Pylyserlaan 112,</p>
                 <p>8670 Koksijde</p>
-            </section>
-            <section class="kolom33">
+            </nav>
+            <nav class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="verhuur.html">Verhuur</a></li>
                         <li><a href="verkoop.html">Verkoop</a></li>
-                        <li><a href="../html/contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </section>
-            <section class="kolom33">
+            </nav>
+            <nav class="kolom33">
                 <h2>Openingsuren</h2>
                 <p>Maandag: gesloten</p>
                 <p>Dinsdag - Vrijdag: 9 - 16u</p>
                 <p>Zaterdag: 8 - 18u</p>
                 <p>Zondag: Gesloten</p>
-            </section>
-        </section>
+            </nav>
+        </nav>
     </aside>
 </footer>
 </body>

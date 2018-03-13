@@ -3,6 +3,10 @@ html {
     height: 100%;
 }
 
+main > .limited{
+    background-color: #F5F5F5
+}
+
 
 body {
     background-color: #ecf0f1;
@@ -19,17 +23,21 @@ p {
 .limited {
     max-width: 960px;
     margin: auto;
-
 }
 
 #headerimg {
     height: auto;
-    width: 100%;
+    width: 90%;
+    margin-top: 1em;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .active{
     pointer-events: none;
     cursor: default;
+    background-color: #2c3e50;
+    color: black;
 }
 
 header h1 {
@@ -41,6 +49,14 @@ header h1 {
 
 header div {
     clear: both;
+}
+
+.contactBlock {
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.5em 0.25em;
+    float: left;
 }
 
 picture {
@@ -71,14 +87,17 @@ picture {
 }
 
 .navigatie a:hover:not(.active) {
-    background-color: #FFFFFF;
-    color: #000;
+    background-color: #2c3e50;
+    color: #FFF;
 }
 
 .navigatie a:active {
-    background-color: #FFFFFF;
-    color: #000;
+    background-color: #2c3e50;
+    color: #FFFFFF;
 }
+
+
+
 
 footer {
     background-color: #2c3e50;
@@ -112,11 +131,9 @@ footer p {
 
 .navigatie-verticaal {
     width: 300px;
-}
-
-.navigatie-verticaal {
+    box-sizing: border-box;
     display: block;
-    padding: 16px;
+    padding: 0;
     color: white;
 }
 
@@ -135,6 +152,7 @@ footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
 
 .rij3KolomGelijk:after {
@@ -193,15 +211,20 @@ form > input {
     width: auto;
 }
 
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
     #logo {
         margin-left: 2em;
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .kolom33 {
         width: 100%;
+    }
+
+    #logo {
+        margin: 1em 0;
+
     }
 
     header > a {
@@ -214,12 +237,12 @@ form > input {
 
     nav > a {
         float: none;
-        display: block;
         width: 100%;
     }
 
     nav {
         float: none;
+        text-align: center;
     }
 
     header > h1 {
@@ -231,17 +254,32 @@ form > input {
 
     footer {
         background-color: #2c3e50;
-        margin-top: 2rem;
         height: 40em;
         padding: 0 32px 32px;
+        margin: auto;
+        text-align: center;
+    }
 
+    .footer {
+        width: 60%;
+        margin: auto;
+    }
+
+    .navigatie-verticaal {
+        display: block;
+        padding: 0;
+        color: white;
+        width: 50%;
+        margin: auto;
     }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     nav > a {
         display: table;
         width: 100%;
     }
+
+
 
 }

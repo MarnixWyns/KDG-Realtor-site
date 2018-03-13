@@ -1,4 +1,4 @@
-/* Verkoop en Verhuur kolommen */
+/* Verkoop en verhuur kolommen */
 .vKolom {
     float: left;
     width: 25%;
@@ -7,6 +7,12 @@
 a {
     text-decoration: none;
     color: black;
+}
+
+img not #logo {
+    box-sizing: border-box;
+    border: solid grey 1px;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.45);
 }
 
 .rij3KolomGelijk:after {
@@ -21,12 +27,56 @@ a {
     box-sizing: border-box;
     display: inline-block;
     margin: 0.5em 0.25em;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.75);
+}
+
+.vBlock:hover{
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.75) ;
+}
+
+.mini{
+    margin: 0;
+    box-sizing: border-box;
+    border: solid grey 2px;
 }
 
 h3 {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-size: 14px;
+}
+
+form {
+    box-sizing: border-box;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#sbutton {
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    margin-top: 0.5em;
+}
+
+label[for=berichtVeld]{
+    margin: 4px 0;
+}
+
+label[for=berichtVeld]:after{
+    margin: 4px 0;
+}
+
+#maincontact {
+    float: left;
+}
+
+#sbutton:hover{
+    border: solid grey;
+}
+
+.mini {
+     margin-left: 2em;
 }
 
 /* Verkoop verhuur */
@@ -71,7 +121,13 @@ img .vImg {
     margin-top: 4px;
 }
 
-/* Responsive kaders stijlen*/
+.rij4KolomGelijk:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive*/
 @media (max-width: 960px) {
     .vKolom {
         width: 50%;
@@ -82,10 +138,19 @@ img .vImg {
     .vKolom {
         width: 100%;
     }
+
+    .vFilter {
+        display: table;
+        background-color: #2c3e50;
+        height:auto;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        padding: 0.5em;
+    }
+
+    select {
+        clear: both;
+    }
 }
 
-.rij4KolomGelijk:after{
-    content: "";
-    display: table;
-    clear: both;
-}

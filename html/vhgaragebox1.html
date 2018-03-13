@@ -2,10 +2,12 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Garagebox</title>
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/verkoopverhuur.css">
     <link rel="stylesheet" href="../css/basis.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
 <header class="limited">
@@ -26,25 +28,28 @@
 
 <main>
     <article class="limited">
-        <h1>Moderne villa op 1km van het strand</h1>
+        <h1>Garageboxen op 2km van het centrum</h1>
 
         <section class="rij2KolomOngelijk">
-            <img id="hoofdfoto" src="../images/Verhuur/fullsize/garagebox1.jpg" alt="Een foto van twee garageboxen waarvan 1 open en 1 gesloten is" width="480" height="360">
+            <img id="hoofdfoto" src="../images/verhuur/fullsize/garagebox1.jpg" alt="Een foto van twee garageboxen waarvan 1 open en 1 gesloten is" width="480" height="360">
             <section class="kolom33 description">
                 <h2>&euro;40 / maand</h2>
-                <h3>Boxgarage, 3.5m x 2m (7m<sup>2</sup>)</h3>
+                <h3>Boxgarage, 4,2m x 2,8m (11,8m<sup>2</sup>)</h3>
 
                 <ul>Te huren op basis van
                     <li>Maandverhuur</li>
                     <li>Jaarverhuur</li>
                 </ul>
+
+                <img class="mini" src="../images/verhuur/mini/garage1binnen.jpg"
+                     alt="Het interieur van het getoonde appartement" width="200" height="133">
             </section>
         </section>
 
         <section class="rij3KolomGelijk">
             <section class="kolom33">
                 <h3>Beschrijving</h3>
-                <p>Afgeschermde garagenboxen op ongeveer 2km van het centrum van Koksijde
+                <p>Afgeschermde garagenboxen op ongeveer 2km van het centrum van Koksijde.
                 </p>
             </section>
             <section class="kolom33">
@@ -60,7 +65,43 @@
                 <p>Spalaan 18, 8400 Koksijde</p>
             </section>
         </section>
+
+        <section class="rij">
+            <form action="contactComplete.html">
+                <fieldset>
+                    <legend>Contacteer ons:</legend>
+                    <section class="contactBlock">
+                        <label for="voornaam">Voornaam:</label><br>
+                        <input class="contactI" id="voornaam" type="text" name="voornaam" size="40" required><br>
+                        <label for="achternaam">Achternaam</label><br>
+                        <input class="contactI" id="achternaam" type="text" name="achternaam" size="40" required><br>
+                        <label for="telefoon">Telefoon:</label><br>
+                        <input class="contactI" id="telefoon" type="text" name="telefoon" size="40"
+                               pattern="^0[1-9][0-9]{7,8}$" required><br>
+                        <label for="email">Email adres:</label><br>
+                        <input class="contactI" id="email" type="text" name="email" size="40"
+                               pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
+                        <br>
+                        <br>
+                        Hoe wenst u bereikt te worden?<br>
+                        <input type="radio" id="rbtelefoon" name="contact" value="telefoon" checked>
+                        <label class="cRB" for="rbtelefoon">Telefonisch</label><br>
+                        <input type="radio" id="rbemail" name="contact" value="email">
+                        <label class="cRB" for="rbemail">Via email</label><br>
+                    </section>
+
+                    <section class="contactBlock">
+                        <label for="berichtVeld">Bericht:</label>
+                        <textarea class="contactI" name="bericht" id="berichtVeld" cols="50" rows="10"></textarea>
+                        <input type="submit" value="Verzend" class="button" id="sbutton">
+                    </section>
+                </fieldset>
+
+            </form>
+        </section>
     </article>
+
+
 </main>
 
 <footer>

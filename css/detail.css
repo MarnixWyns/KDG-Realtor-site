@@ -2,7 +2,7 @@ h3 {
     font-weight: normal;
 }
 
-img {
+img not #logo {
    margin: 2%;
 }
 
@@ -23,13 +23,18 @@ img {
     .kolom33 {
         width: 100%;
     }
+    img not #logo {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
 @media (max-width: 700px) {
     body {
         margin: 0;
     }
-    img {
+    img not #logo {
         width: 60%;
         margin-left: 20%;
         margin-right: 20%;
