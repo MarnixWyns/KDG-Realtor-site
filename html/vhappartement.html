@@ -2,13 +2,15 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Appartement</title>
-    <link rel="stylesheet" href="../css/detail.css">
-    <link rel="stylesheet" href="../css/verkoopverhuur.css">
     <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/verkoopverhuur.css">
+    <link rel="stylesheet" href="../css/detail.css">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+<h1 class="outline">Detailpagina verhuur appartement</h1>
 <header class="limited">
     <a href="../index.html">
         <img id="logo" src="../images/logo.png" alt="Het logo van immobilienkantoor Wyns" width="250" height="80">
@@ -17,23 +19,33 @@
 </header>
 
 <nav class="navigatie">
+    <h2 class="outline">Navigatie balk</h2>
     <section class="limited">
-        <a href="../index.html" id="navFirst">Home</a>
-        <a href="verhuur.html">Verhuur</a>
-        <a href="verkoop.html">Verkoop</a>
-        <a href="contact.html">Contact</a>
+        <h3 class="outline">Navigatie inhoud</h3>
+        <a href="../index.html">Home</a>
+        <a class="active" href="../html/verhuur.html">Verhuur</a>
+        <a href="../html/verkoop.html">Verkoop</a>
+        <a href="../html/contact.html">Contact</a>
     </section>
 </nav>
 
 <main>
     <article class="limited">
         <h1>Appartement in het centrum van Koksijde</h1>
-
         <section class="rij2KolomOngelijk">
-            <img id="hoofdfoto" src="../images/verhuur/fullsize/appartement4.jpg" alt="Een foto van twee garageboxen waarvan 1 open en 1 gesloten is" width="480" height="360">
+            <h2 class="outline">Informatie prijs beschikbaarheid</h2>
+            <img id="hoofdfoto" src="../images/verhuur/fullsize/appartement4.jpg"
+                 alt="Een foto van twee garageboxen waarvan 1 open en 1 gesloten is" width="480" height="360">
             <section class="kolom33 description">
                 <h2>&euro;400 / maand</h2>
                 <h3>Appartement (82m<sup>2</sup>)</h3>
+                <h3>Beschikbaar vanaf: 30/03/2018</h3>
+
+                <ul>Te huren op basis van
+                    <li>Maandverhuur</li>
+                    <li>Jaarverhuur</li>
+                </ul>
+
                 <img class="mini" src="../images/verhuur/mini/keuken1.jpg"
                      alt="Het interieur van het getoonde appartement" width="205" height="140">
                 <img class="mini" src="../images/verhuur/mini/living1.jpg"
@@ -42,9 +54,10 @@
         </section>
 
         <section class="rij3KolomGelijk">
+            <h2 class="outline">Detail informatie</h2>
             <section class="kolom33">
                 <h3>Beschrijving</h3>
-                <p>Bemeubeld appartement op de 2de verdieping,
+                <p>Bemeubeld appartement op de 2de verdieping, rustige ligging nabij de duinen en op wandelafstand van het centrum.
                 </p>
             </section>
             <section class="kolom33">
@@ -63,10 +76,11 @@
         </section>
 
         <section class="rij">
+            <h2 class="outline">Contactformulier</h2>
             <form action="contactComplete.html">
                 <fieldset>
                     <legend>Contacteer ons:</legend>
-                    <section class="contactBlock">
+                    <section class="contactBlock" id="maincontact">
                         <label for="voornaam">Voornaam:</label><br>
                         <input class="contactI" id="voornaam" type="text" name="voornaam" size="40" required><br>
                         <label for="achternaam">Achternaam</label><br>
@@ -85,22 +99,23 @@
                         <input type="radio" id="rbemail" name="contact" value="email">
                         <label class="cRB" for="rbemail">Via email</label><br>
                     </section>
-
                     <section class="contactBlock">
-                        <label for="berichtVeld">Bericht:</label>
-                        <textarea class="contactI" name="bericht" id="berichtVeld" cols="50" rows="10"></textarea>
+                        <label for="berichtVeld">Bericht:</label><br>
+                        <textarea class="contactI" name="bericht" id="berichtVeld" cols="50" rows="10"></textarea><br>
                         <input type="submit" value="Verzend" class="button" id="sbutton">
                     </section>
                 </fieldset>
-
             </form>
         </section>
     </article>
 </main>
 
 <footer>
-    <aside class="footer">
-        <nav class="rij3KolomGelijk">
+    <h2 class="outline">Footer</h2>
+    <aside id="footer" class="footer">
+        <h3 class="outline">Footer Tekstvak</h3>
+        <section class="rij">
+            <h4 class="outline">Footer inhoud</h4>
             <nav class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
@@ -110,22 +125,25 @@
             <nav class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
+                    <h3 class="outline">navigatie inhoud</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="verhuur.html">Verhuur</a></li>
-                        <li><a href="verkoop.html">Verkoop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="../html/verhuur.html">Verhuur</a></li>
+                        <li><a href="../html/verkoop.html">Verkoop</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </nav>
             <nav class="kolom33">
                 <h2>Openingsuren</h2>
-                <p>Maandag: gesloten</p>
-                <p>Dinsdag - Vrijdag: 9 - 16u</p>
-                <p>Zaterdag: 8 - 18u</p>
-                <p>Zondag: Gesloten</p>
+                <ul>
+                    <li>Maandag: gesloten</li>
+                    <li>Dinsdag - Vrijdag: 9 - 16u</li>
+                    <li>Zaterdag: 8 - 18u</li>
+                    <li>Zondag: Gesloten</li>
+                </ul>
             </nav>
-        </nav>
+        </section>
     </aside>
 </footer>
 </body>

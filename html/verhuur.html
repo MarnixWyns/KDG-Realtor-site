@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+<h1 class="outline">Hoofdpagina panden te huur</h1>
 <header class="limited">
     <a href="../index.html">
         <img id="logo" src="../images/logo.png" alt="Het logo van immobilienkantoor Wyns" width="250" height="80">
@@ -17,17 +18,19 @@
 </header>
 
 <nav class="navigatie">
+    <h2 class="outline">Navigatie balk</h2>
     <section class="limited">
-        <a href="../index.html" id="navFirst">Home</a>
-        <a class="active" href="verhuur.html">Verhuur</a>
-        <a href="verkoop.html">Verkoop</a>
-        <a href="contact.html">Contact</a>
+        <h3 class="outline">Navigatie inhoud</h3>
+        <a href="../index.html">Home</a>
+        <a class="active" href="../html/verhuur.html">Verhuur</a>
+        <a href="../html/verkoop.html">Verkoop</a>
+        <a href="../html/contact.html">Contact</a>
     </section>
 </nav>
 
 <main>
-
-    <section class="vFilter limited">
+    <section class="vFilter">
+        <h2 class="outline">Filter</h2>
         <label for="sFilterSlpk">Filters:</label>
         <select name="slpkFilter" id="sFilterSlpk">
             <option value="Geen slaapkamers">Geen slaapkamers</option>
@@ -51,13 +54,13 @@
             <option value="Maand">Maand</option>
             <option selected value="Jaar">Jaar</option>
         </select>
-
-        <a href="verkoopfiltered.html">
+        <a href="verhuurfiltered.html">
             <button id="vFilterBtn">Zoek</button>
         </a>
     </section>
 
     <article class="limited">
+        <h2 class="outline">Panden te huur</h2>
         <section class="vBlock">
             <a href="vhgaragebox1.html">
                 <img class="vImg" src="../images/verhuur/thumbnails/garagebox1.jpg"
@@ -154,8 +157,11 @@
     </article>
 </main>
 <footer>
-    <aside class="footer">
-        <nav class="rij">
+    <h2 class="outline">Footer</h2>
+    <aside id="footer" class="footer">
+        <h3 class="outline">Footer Tekstvak</h3>
+        <section class="rij">
+            <h4 class="outline">Footer inhoud</h4>
             <nav class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
@@ -165,22 +171,25 @@
             <nav class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
+                    <h3 class="outline">navigatie inhoud</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../html/verhuur.html">Verhuur</a></li>
-                        <li><a href="verkoop.html">Verkoop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="../html/verkoop.html">Verkoop</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </nav>
             <nav class="kolom33">
                 <h2>Openingsuren</h2>
-                <p>Maandag: gesloten</p>
-                <p>Dinsdag - Vrijdag: 9 - 16u</p>
-                <p>Zaterdag: 8 - 18u</p>
-                <p>Zondag: Gesloten</p>
+                <ul>
+                    <li>Maandag: gesloten</li>
+                    <li>Dinsdag - Vrijdag: 9 - 16u</li>
+                    <li>Zaterdag: 8 - 18u</li>
+                    <li>Zondag: Gesloten</li>
+                </ul>
             </nav>
-        </nav>
+        </section>
     </aside>
 </footer>
 </body>

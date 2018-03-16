@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Appartement</title>
-    <link rel="stylesheet" href="../css/detail.css">
-    <link rel="stylesheet" href="../css/verkoopverhuur.css">
     <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/verkoopverhuur.css">
+    <link rel="stylesheet" href="../css/detail.css">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+<h1 class="outline">Detailpagina verkoop appartement</h1>
+
 <header class="limited">
     <a href="../index.html">
         <img id="logo" src="../images/logo.png" alt="Het logo van immobilienkantoor Wyns" width="250" height="80">
@@ -18,34 +20,40 @@
 </header>
 
 <nav class="navigatie">
+    <h2 class="outline">Navigatie balk</h2>
     <section class="limited">
-        <a href="../index.html" id="navFirst">Home</a>
-        <a href="verhuur.html">Verhuur</a>
-        <a href="verkoop.html">Verkoop</a>
-        <a href="contact.html">Contact</a>
+        <h3 class="outline">Navigatie inhoud</h3>
+        <a href="../index.html">Home</a>
+        <a href="../html/verhuur.html">Verhuur</a>
+        <a class="active" href="../html/verkoop.html">Verkoop</a>
+        <a href="../html/contact.html">Contact</a>
     </section>
 </nav>
 
 <main>
     <article class="limited">
-        <h1>Moderne villa op 1km van het strand</h1>
+        <h1>Residentie op 200m van het strand</h1>
 
         <section class="rij2KolomOngelijk">
-            <img id="hoofdfoto" src="../images/verkoop/fullsize/appartement21.jpg" alt="Een foto van een appartement" width="480" height="360">
+            <h2 class="outline">Informatie prijs beschikbaarheid</h2>
+            <img id="hoofdfoto" src="../images/verkoop/fullsize/appartement21.jpg" alt="Een foto van een appartement"
+                 width="480" height="360">
             <section class="kolom33 description">
                 <h2>&euro;240.000</h2>
                 <h3>Appartement, (68m<sup>2</sup>)</h3>
-                <img class="mini" src="../images/verkoop/fullsize/appartement21.jpg"
+                <h3>Beschikbaar vanaf: 01/05/2018</h3>
+                <img class="mini" src="../images/verkoop/mini/appartement1f1.jpg"
                      alt="Het interieur van het getoonde appartement" width="200" height="140">
-                <img class="mini" src="../images/verkoop/fullsize/appartement21.jpg"
+                <img class="mini" src="../images/verkoop/mini/appartement1f2.JPG"
                      alt="Het interieur van het getoonde appartement" width="200" height="140">
             </section>
         </section>
 
         <section class="rij3KolomGelijk">
+            <h2 class="outline">Detail informatie</h2>
             <section class="kolom33">
                 <h3>Beschrijving</h3>
-                <p>Bouwjaar 1978, gemeubeld
+                <p>Bouwjaar 1978, bemeubeld, gelegen op de eerste verdieping in de buurt van centrum koksijde, dicht bij winkels, gerenoveerde keuken.
                 </p>
             </section>
             <section class="kolom33">
@@ -64,6 +72,7 @@
         </section>
 
         <section class="rij">
+            <h2 class="outline">Contactformulier</h2>
             <form action="contactComplete.html">
                 <fieldset>
                     <legend>Contacteer ons:</legend>
@@ -98,8 +107,11 @@
 </main>
 
 <footer>
-    <aside class="footer">
-        <nav class="rij3KolomGelijk">
+    <h2 class="outline">Footer</h2>
+    <aside id="footer" class="footer">
+        <h3 class="outline">Footer Tekstvak</h3>
+        <section class="rij">
+            <h4 class="outline">Footer inhoud</h4>
             <nav class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
@@ -109,22 +121,25 @@
             <nav class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
+                    <h3 class="outline">navigatie inhoud</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="verhuur.html">Verhuur</a></li>
-                        <li><a href="verkoop.html">Verkoop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="../html/verhuur.html">Verhuur</a></li>
+                        <li><a href="../html/verkoop.html">Verkoop</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </nav>
             <nav class="kolom33">
                 <h2>Openingsuren</h2>
-                <p>Maandag: gesloten</p>
-                <p>Dinsdag - Vrijdag: 9 - 16u</p>
-                <p>Zaterdag: 8 - 18u</p>
-                <p>Zondag: Gesloten</p>
+                <ul>
+                    <li>Maandag: gesloten</li>
+                    <li>Dinsdag - Vrijdag: 9 - 16u</li>
+                    <li>Zaterdag: 8 - 18u</li>
+                    <li>Zondag: Gesloten</li>
+                </ul>
             </nav>
-        </nav>
+        </section>
     </aside>
 </footer>
 </body>

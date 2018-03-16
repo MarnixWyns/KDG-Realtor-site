@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="../css/basis.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/verkoopverhuur.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
+<h1 class="outline">Filterpagina panden te koop</h1>
 <header class="limited">
     <a href="../index.html">
         <img id="logo" src="../images/logo.png" alt="Het logo van immobilienkantoor Wyns" width="250" height="80">
@@ -16,16 +18,19 @@
 </header>
 
 <nav class="navigatie">
+    <h2 class="outline">Navigatie balk</h2>
     <section class="limited">
-        <a href="../index.html" id="navFirst">Home</a>
-        <a href="verhuur.html">Verhuur</a>
-        <a href="verkoop.html">Verkoop</a>
-        <a href="contact.html">Contact</a>
+        <h3 class="outline">Navigatie inhoud</h3>
+        <a href="../index.html">Home</a>
+        <a href="../html/verhuur.html">Verhuur</a>
+        <a class="active" href="../html/verkoop.html">Verkoop</a>
+        <a href="../html/contact.html">Contact</a>
     </section>
 </nav>
 
 <main>
-    <section class="vFilter limited">
+    <section class="vFilter">
+        <h2 class="outline">Filter</h2>
         <label for="sTypeV">Filters:</label>
         <select name="sTypeV" id="sTypeV">
             <option value="Herverkoop">Herverkoop</option>
@@ -33,10 +38,10 @@
         </select>
         <label for="sFilterPrijs"></label>
         <select name="prijsFilter" id="sFilterPrijs">
-            <option value="< 250.000">&lt; &euro;249</option>
-            <option value="250.000-500.000">&euro;250 - &euro;499</option>
-            <option value="500.000-750.000">&euro;500 - &euro;749</option>
-            <option value="750.000+">&gt; &euro;750</option>
+            <option value="< 250.000">&lt; &euro;250.000</option>
+            <option value="250.000-500.000">&euro;250.000 - &euro;499.000</option>
+            <option value="500.000-750.000">&euro;500.000 - &euro;749.000</option>
+            <option value="750.000+">&gt; &euro;750.000</option>
         </select>
         <label for="sVerwarming"></label>
         <select name="sVerwarming" id="sVerwarming">
@@ -45,18 +50,20 @@
             <option value="Elektriciteit">Elektriciteit</option>
         </select>
 
-        <a href="verhuurfiltered.html">
+        <a href="verkoopfiltered.html">
             <button id="vFilterBtn">Zoek</button>
         </a>
     </section>
 
     <article class="limited">
+        <h2 class="outline">Gefilterde panden te koop</h2>
         <section class="vBlock">
             <a href="#">
                 <img class="vImg" src="../images/verkoop/fullsize/appartement21.jpg" alt="Foto van een villa"
                      width="205"
                      height="140">
                 <h2>Appartement</h2>
+                <h3>Herverkoop</h3>
                 <p>&euro; 240.000</p>
             </a>
         </section>
@@ -66,15 +73,18 @@
                      width="205"
                      height="140">
                 <h2>Appartement</h2>
+                <h3>Herverkoop</h3>
                 <p>&euro; 245.000</p>
             </a>
         </section>
     </article>
 </main>
-
 <footer>
-    <aside class="footer">
-        <nav class="rij">
+    <h2 class="outline">Footer</h2>
+    <aside id="footer" class="footer">
+        <h3 class="outline">Footer Tekstvak</h3>
+        <section class="rij">
+            <h4 class="outline">Footer inhoud</h4>
             <nav class="kolom33">
                 <h2>Contact</h2>
                 <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
@@ -84,22 +94,25 @@
             <nav class="kolom33">
                 <h2>Navigatie</h2>
                 <nav class="navigatie-verticaal">
+                    <h3 class="outline">navigatie inhoud</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="verhuur.html">Verhuur</a></li>
-                        <li><a href="verkoop.html">Verkoop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="../html/verhuur.html">Verhuur</a></li>
+                        <li><a href="../html/verkoop.html">Verkoop</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </nav>
             <nav class="kolom33">
                 <h2>Openingsuren</h2>
-                <p>Maandag: gesloten</p>
-                <p>Dinsdag - Vrijdag: 9 - 16u</p>
-                <p>Zaterdag: 8 - 18u</p>
-                <p>Zondag: Gesloten</p>
+                <ul>
+                    <li>Maandag: gesloten</li>
+                    <li>Dinsdag - Vrijdag: 9 - 16u</li>
+                    <li>Zaterdag: 8 - 18u</li>
+                    <li>Zondag: Gesloten</li>
+                </ul>
             </nav>
-        </nav>
+        </section>
     </aside>
 </footer>
 </body>

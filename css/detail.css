@@ -17,8 +17,6 @@ img not #logo {
     clear: both;
 }
 
-
-
 @media (max-width: 960px) {
     .kolom33 {
         width: 100%;

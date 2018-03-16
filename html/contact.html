@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
+<h1 class="outline">Contact</h1>
 <header class="limited">
     <a href="../index.html">
         <img id="logo" src="../images/logo.png" alt="Het logo van immobilienkantoor Wyns" width="250" height="80">
@@ -17,11 +18,13 @@
 </header>
 
 <nav class="navigatie">
+    <h2 class="outline">Navigatie balk</h2>
     <section class="limited">
-        <a href="../index.html" id="navFirst">Home</a>
-        <a href="verhuur.html">Verhuur</a>
-        <a href="verkoop.html">Verkoop</a>
-        <a class="active" href="contact.html">Contact</a>
+        <h3 class="outline">Navigatie inhoud</h3>
+        <a href="../index.html">Home</a>
+        <a href="../html/verhuur.html">Verhuur</a>
+        <a href="../html/verkoop.html">Verkoop</a>
+        <a class="active" href="../html/contact.html">Contact</a>
     </section>
 </nav>
 
@@ -32,10 +35,11 @@
             informatie kunt u ons altijd contacteren via onderstaand formulier</p>
         <br>
         <section class="rij">
+            <h3 class="outline">Contactformulier</h3>
             <form action="contactComplete.html">
                 <fieldset>
                     <legend>Contacteer ons:</legend>
-                    <section class="kolom50">
+                    <section class="contactBlock" id="maincontact">
                         <label for="voornaam">Voornaam:</label><br>
                         <input class="contactI" id="voornaam" type="text" name="voornaam" size="40" required><br>
                         <label for="achternaam">Achternaam</label><br>
@@ -54,80 +58,78 @@
                         <input type="radio" id="rbemail" name="contact" value="email">
                         <label class="cRB" for="rbemail">Via email</label><br>
                     </section>
-
-                    <section class="kolom50">
-                        <label for="berichtVeld">Bericht:</label>
-                        <textarea class="contactI" name="bericht" id="berichtVeld" cols="50" rows="10"></textarea>
+                    <section class="contactBlock">
+                        <label for="berichtVeld">Bericht:</label><br>
+                        <textarea class="contactI" name="bericht" id="berichtVeld" cols="50" rows="10"></textarea><br>
                         <input type="submit" value="Verzend" class="button" id="sbutton">
                     </section>
                 </fieldset>
-
             </form>
         </section>
     </section>
 
     <section>
-            <section class="vBlock">
-                <h2>Hoe te bereiken?</h2>
-                <img id="gevelFoto" src="../images/fotogevel.png" alt="Foto van de voorkant van ons filiaal" width="500"
-                     height="300">
-            </section>
+        <h2 class="outline">Foto en adres</h2>
+        <section class="vBlock">
+            <h2>Hoe te bereiken?</h2>
+            <img id="gevelFoto" src="../images/fotogevel.png" alt="Foto van de voorkant van ons filiaal" width="500"
+                 height="300">
+        </section>
 
-            <section class="vBlock">
-                <section id="contactInfo">
-                    <p>U bent natuurlijk ook altijd welkom om eens binnen te springen voor een vrijblevend gesprek met
-                        onze
-                        immo-experts.</p>
-                    <strong>Pylyserlaan 112
-                        8670 Koksijde
-                    </strong>
-                </section>
-                <section class="oUren">
-                    <h2>Openingsuren</h2>
-                    <p>Maandag: gesloten</p>
-                    <p>Dinsdag - Vrijdag: 9 - 16u</p>
-                    <p>Zaterdag: 8 - 18u</p>
-                    <p>Zondag: Gesloten</p>
-                </section>
-
+        <section class="detailInfo">
+            <h2 class="outline">Contactinfo</h2>
+            <section id="contactInfo">
+                <h3 class="outline">Adres</h3>
+                <p>U bent natuurlijk ook altijd welkom om eens binnen te springen voor een vrijblevend gesprek met
+                    onze
+                    immo-experts.</p>
+                <strong>Pylyserlaan 112
+                    8670 Koksijde
+                </strong>
             </section>
-        <iframe
-                width="600"
-                height="450"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDddmE1I5ZE1mySoFibt-h-s0tyvV87Idc
-    &q=Pylyserlaan+112,Koksijde" allowfullscreen>
-        </iframe>
-
-    </section>
-</main>
-<footer>
-    <aside class="footer">
-        <section class="rij">
-            <section class="kolom33">
-                <h2>Contact</h2>
-                <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
-                <p>Pylyserlaan 112,</p>
-                <p>8670 Koksijde</p>
-            </section>
-            <section class="kolom33">
-                <h2>Navigatie</h2>
-                <nav class="navigatie-verticaal">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="verhuur.html">Verhuur</a></li>
-                        <li><a href="verkoop.html">Verkoop</a></li>
-                        <li><a href="../html/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="kolom33">
+            <section class="oUren">
                 <h2>Openingsuren</h2>
                 <p>Maandag: gesloten</p>
                 <p>Dinsdag - Vrijdag: 9 - 16u</p>
                 <p>Zaterdag: 8 - 18u</p>
                 <p>Zondag: Gesloten</p>
             </section>
+        </section>
+    </section>
+</main>
+<footer>
+    <h2 class="outline">Footer</h2>
+    <aside id="footer" class="footer">
+        <h3 class="outline">Footer Tekstvak</h3>
+        <section class="rij">
+            <h4 class="outline">Footer inhoud</h4>
+            <nav class="kolom33">
+                <h2>Contact</h2>
+                <a id="mailto" href="mailto:contact@immowyns.be">contact@immowyns.be</a>
+                <p>Pylyserlaan 112,</p>
+                <p>8670 Koksijde</p>
+            </nav>
+            <nav class="kolom33">
+                <h2>Navigatie</h2>
+                <nav class="navigatie-verticaal">
+                    <h3 class="outline">navigatie inhoud</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../html/verhuur.html">Verhuur</a></li>
+                        <li><a href="../html/verkoop.html">Verkoop</a></li>
+                        <li><a href="../html/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </nav>
+            <nav class="kolom33">
+                <h2>Openingsuren</h2>
+                <ul>
+                    <li>Maandag: gesloten</li>
+                    <li>Dinsdag - Vrijdag: 9 - 16u</li>
+                    <li>Zaterdag: 8 - 18u</li>
+                    <li>Zondag: Gesloten</li>
+                </ul>
+            </nav>
         </section>
     </aside>
 </footer>
